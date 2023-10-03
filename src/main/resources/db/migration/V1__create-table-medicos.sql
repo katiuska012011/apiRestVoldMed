@@ -1,0 +1,15 @@
+create table medicos(
+                        id int not null auto_increment,
+                        nombre VARCHAR(100) not null,
+                        email VARCHAR(100) not null unique,
+                        documento VARCHAR(50) not null,
+                        especialidad VARCHAR(100) not null,
+                        calle VARCHAR(100) not null,
+                        distrito VARCHAR(100) not null,
+                        complemento VARCHAR(100),
+                        numero VARCHAR(100),
+                        ciudad VARCHAR(100) not null,
+
+                        PRIMARY KEY (id)
+
+);
